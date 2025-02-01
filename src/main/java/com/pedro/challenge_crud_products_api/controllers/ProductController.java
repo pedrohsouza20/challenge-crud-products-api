@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 public class ProductController {
@@ -24,6 +26,12 @@ public class ProductController {
        BeanUtils.copyProperties(productRecordDto, productModel);
         System.out.print("aqui" + productRecordDto.available() + productModel.getAvailable());
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));
+    }
+
+    @GetMapping("/products")
+    public ResponseEntity<List<ProductModel>> getAllProducts (){
+        List<ProductModel> productsList = productRepository.findAll();
+        return ResponseEntity.status(HttpStatus.OK).body(productsList);
     }
 
     /*@PostMapping("/products")
