@@ -18,6 +18,7 @@ public class ProductController {
     @Autowired
     ProductRepository productRepository;
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/products")
     public ResponseEntity<ProductModel> saveProduct(@RequestBody @Valid ProductRecordDto productRecordDto){
         System.out.println("teste");
