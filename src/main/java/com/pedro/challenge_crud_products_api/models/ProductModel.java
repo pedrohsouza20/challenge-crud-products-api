@@ -21,7 +21,7 @@ public class ProductModel implements Serializable {
 
     private BigDecimal price;
 
-    private Boolean active;
+    private Boolean available;
 
     public UUID getId() {
         return id;
@@ -55,12 +55,12 @@ public class ProductModel implements Serializable {
         this.price = price;
     }
 
-    public Boolean getActive() {
-        return active;
+    public Boolean getAvailable() {
+        return available;
     }
 
-    public void setActive(Boolean active) {
-        this.active = active;
+    public void setAvailable(Boolean available) {
+        this.available = available;
     }
 
 

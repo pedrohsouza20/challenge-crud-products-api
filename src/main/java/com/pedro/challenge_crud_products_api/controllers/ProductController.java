@@ -22,7 +22,7 @@ public class ProductController {
         var productModel = new ProductModel();
 
        BeanUtils.copyProperties(productRecordDto, productModel);
-        System.out.print("aqui" + productRecordDto.active() + productModel.getActive());
+        System.out.print("aqui" + productRecordDto.available() + productModel.getAvailable());
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));
     }
 
