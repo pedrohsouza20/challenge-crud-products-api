@@ -67,17 +67,16 @@ Baixe o Java e o JDK 17
 
 Clone o Back-end do projeto pelo repositório: [Repositório Back-end](https://github.com/pedrohsouza20/challenge-crud-products-api)
 Defina as variáveis de ambiente para a conexão com o banco de dados:
-
-- Caso esteja utilizando IntelliJ:
-Menu > Run > Edit Configurations > Enviroment Variables
-
 ``
 username | password
 ``
+- Caso esteja utilizando IntelliJ:
+Menu > Run > Edit Configurations > Enviroment Variables
+
 ####
 Baixe todas as dependências, utilizando o Maven
 Execute o projeto; o código gerará a tabela products no seu banco de dados.
 ### Database
 - Postgres 17
-- pgAdmin como SGBD 4
+- pgAdmin como SGBD 4 - crie o banco challenge-crud-products-api
 
