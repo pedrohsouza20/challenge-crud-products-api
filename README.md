@@ -40,7 +40,7 @@
 - TypeScript 5.7.2
 - IDE: VS CODE 
 
-Faça o download do Angular 19.1.0 utilizando npm:
+Faça o download do Angular 19.1.0 utilizando npm (requer Node.js ^18.19.1 || ^20.11.1 || ^22.0.0):
 
 ``npm install -g @angular/cli@19.1.0``
 ####
